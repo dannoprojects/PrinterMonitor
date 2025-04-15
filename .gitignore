@@ -1,0 +1,15 @@
+# Ignore environment files
+.env
+
+# Ignore log files
+Logs/*.txt
+
+# Ignore Chrome driver
+chromedriver.exe
+
+# Ignore secrets files
+credentials.json
+token.json
+
+# Ignore WebDriver Manager cache
+.wdm/
