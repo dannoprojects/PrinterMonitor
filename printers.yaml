@@ -1,0 +1,24 @@
+printers:
+  - name: M404dn
+    url: "http://randys/#hId-pgConsumables"
+    model: "HP 58A (CF258A)"
+    type: "pages_remaining"
+    threshold: 1000
+
+  - name: M402
+    url: "http://npia601d3/info_suppliesStatus.html?tab=Home&menu=SupplyStatus"
+    model: "26X (CF226X)"
+    type: "toner"
+    xpath: "/html/body/div[2]/table/tbody/tr[2]/td[2]/div[2]/table/tbody/tr/td[1]/table/tbody/tr[1]/td/table/tbody/tr[1]/td/table/tbody/tr/td[3]"
+    threshold: 8
+
+  - name: MFP
+    url: "http://192.168.101.8/info_suppliesStatus.html?tab=Home&menu=SupplyStatus"
+    model_numbers:
+      Black: "CE400X"
+      Cyan: "CE401A"
+      Magenta: "CE403A"
+      Yellow: "CE402A"
+    type: "mfp"
+    toner_threshold: 15
+    waste_toner_model: "CE254A"
